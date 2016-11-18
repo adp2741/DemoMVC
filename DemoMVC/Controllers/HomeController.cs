@@ -17,7 +17,6 @@ namespace DemoMVC.Controllers
         {
             ViewBag.Message = "Your application description page.";
             ViewBag.MoreInfo = "This is a test from Andrew.";
-
             return View();
         }
 
