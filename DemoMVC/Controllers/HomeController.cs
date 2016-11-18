@@ -15,8 +15,17 @@ namespace DemoMVC.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "";
             ViewBag.MoreInfo = "This is a test from Andrew.";
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult About(string userData)
+        {
+            ViewBag.Title = "Congratulations!";
+            ViewBag.Message = userData;
+            ViewBag.MoreInfo = "Nice job, you posted an item!";
             return View();
         }
 
